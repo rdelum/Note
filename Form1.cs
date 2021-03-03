@@ -81,6 +81,8 @@ namespace Notepad
         {
             var connectionString = getConnection();
 
+
+
             var queryString = $"update notes set TextBox = {textBox_TitleEdit.Text} where ID = {textBoxEditID.Text} VALUES({textBox_Title.Text}, {textBox_NoteContent.Text}) ";
 
             using (SqlConnection connection = new SqlConnection(
